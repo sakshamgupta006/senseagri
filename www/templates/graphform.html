@@ -1,0 +1,48 @@
+<ion-view view-title="Visualisation" style="font-family:sans-serif">
+  <ion-content class="padding create" has-header="true">
+      <div class="nav" style="text-align:center;font-family: 'Abel', sans-serif;"> <h2 class="topName">Visualisation</h2></div>
+
+      <div class="list padding">
+          <label class="item item-input item-floating-label">
+            <span class="input-label calm">Market:</span>
+            <input type="text" placeholder="Hapur" ng-model="formdata.market">
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label calm">Commodity:</span>
+            <input type="text" placeholder="Ex:- Wheat,Rice" ng-model="formdata.commodity">
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label calm">Year:</span>
+            <input type="number" placeholder="Ex:- 2006,2016" ng-model="formdata.year">
+          </label>
+
+          </div>
+          <div class="padding">
+          <div class="item item-input-inset">
+
+            <button class="button button-block button-calm" on-hold="onHold()" ng-click="bars()" > Search <i class="icon ion-ios-search"></i></button>
+
+            <button class="button button-block  button-royal" on-hold="onHold()" ng-click="bar12()"  style="margin-left:10px;"> See full trend <i class="icon ion-log-in"></i></button>
+            
+          </div>
+          
+          
+          <div class="padding">
+            <a class="button button-block  button-assertive"  ui-sref="linechart" > Generate <i class="icon ion-log-in"></i></a>
+          </div>
+
+
+          <div>
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <div class="padding" style="text-align:center">
+            <h2>{{formdata.year}}</h2>
+          </div>
+
+
+      </div>
+          
+  </ion-content>
+
+</ion-view>

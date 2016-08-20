@@ -1,0 +1,63 @@
+/* research section*/
+
+.rnav{ 
+  	right: 0;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+} 
+
+.rheading{
+	font-family: 'Abel', sans-serif;
+	color:white;
+	background-color: #85be00;
+	font-size: 70px;
+}
+.rsheading{
+	font-family: 'Abel', sans-serif;
+	color:white;
+	font-size: 60px;
+	background-color: #85be00;
+	margin-left:20px; 
+}
+
+
+.rcard{
+	font-family: 'Open Sans', sans-serif;
+	position: center;
+	padding: 20px;
+	margin: 20px;
+	background-color: #f7f7f7;
+
+
+}
+.rcard:hover{
+	background-color:;
+	text-decoration: none;
+}
+
+.container > div{
+	position: relative;
+	opacity: 1;
+	transform: translateX(0px);
+	transition: all 1s ease-in-out;
+}
+ div .is-show{
+	opacity: 0;
+	transform: translateX(100px);
+}
+@media (max-width: 400px){
+.rheading{
+	font-family: 'Abel', sans-serif;
+	color:white;
+	background-color: #85be00;
+	font-size: 60px;
+}
+.rsheading{
+	font-family: 'Abel', sans-serif;
+	color:white;
+	font-size: 20px;
+	background-color: #85be00;
+}
+
+}

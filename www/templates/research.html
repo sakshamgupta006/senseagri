@@ -1,0 +1,36 @@
+<ion-content has-subheader="false">
+<link rel="stylesheet" type="text/css" href="css/researchcss.css">
+   <script type="text/javascript" src="js/home.js"></script>
+
+
+<div class="nav" style="text-align:center"> <p class="rheading">Research<span class="rsheading">Section</span></p></div>
+
+
+
+
+<div class="container researchcontainer">
+<br>
+
+	<div class="rcard"  ng-repeat="news in data">			
+		<a style="text-decoration: none;" href="{{news.link}}">
+		<div class="row" >
+			<div class="col-lg-7 col-md-7 col-sm-7 ">
+				<img class="full-image" class="img-responsive" alt="Responsive image" ng-src="{{news.src}}">
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-5  newshead">
+ 				<div class="row ">
+	 				<h1 style="	font-family: 'Abel', sans-serif;font-weight: bold;color:black;">
+	 				{{news.title}}</h1>			
+	 				<hr>
+ 				</div>
+				<div class="row">
+	 				<h4 id="pnews" style="font-size:20px;">{{news.p}}</h4> 
+	 				<br>
+ 				</div>
+ 			</div>		    
+		</div>	
+		</a>	
+ 	</div>
+</div>
+
+</ion-content>

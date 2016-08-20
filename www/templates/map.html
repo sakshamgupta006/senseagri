@@ -1,0 +1,19 @@
+ <ion-view view-title="Maps" style="font-family:sans-serif">
+
+      <ion-content class="padding" ng-controller="MapCtrl" >
+      
+          <div class="nav" style="text-align:center;font-family: 'Abel', sans-serif;"> <h2 class="topName">Search Nearby Market</h2></div>
+
+              <div class="item item-input ">
+                <i class="icon ion-ios-search placeholder-icon"></i>                
+                  <input id="searchmarket" type="text" data-tap-disabled="true" ng-model="search" placeholder="Search by district name."  onkeypress="handleKeyPress(e)" value="Ghaziabad"> 
+                  <button class="button  button-assertive"  ng-click="reload()">Search </button>
+              </div>
+
+      
+             <div id="map" data-tap-disabled="true">
+        
+             </div>
+      
+      </ion-content>
+</ion-view>
